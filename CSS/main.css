@@ -1,0 +1,277 @@
+                     /*General Style  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../Images/pexels-damir-mijailovic-5409941.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Rubik", sans-serif;
+}
+
+.continer{
+    width: 35%;
+    margin: auto;
+    text-align: center;
+}
+
+                            /*Navbar Style   */
+nav{
+    background-color: white;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+}
+
+nav .nav-logo{
+    width: 15%;
+}
+
+nav .nav-logo img{
+    width: 100%;
+}
+
+nav .nav-list li{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+nav .nav-list a{
+    text-decoration: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+nav .nav-list a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(85, 27, 140);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav .nav-list a:hover{
+    color: rgb(5, 5, 169);
+}
+
+nav .nav-list a:hover::before{
+    width: 100%;
+}
+
+                            /*Header Style   */
+.header{
+    margin: 8% 16%;
+    width: 40%;
+}
+
+.header h3{
+    color: rgb(83, 19, 143);
+    font-weight: 700;
+}
+
+.header h1{
+    color: white;
+    font-size: 70px;
+    margin: 10px 0px;
+}
+
+.header p{
+    color: rgb(196, 193, 193);
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 21px;
+}
+
+.header .btn{
+    background-color: transparent;
+    border: 2px solid rgb(108, 107, 107);
+    padding: 10px 15px;
+    color: rgb(232, 9, 76);
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.header .btn:hover{
+    border-color: rgb(213, 210, 210);
+    cursor: pointer;
+    color: white;
+    background-color: blueviolet;
+}
+
+                              /* Team Style */
+.team{
+    margin-top: 205px;
+}
+
+.team .team-header{
+    background-color: rgb(204, 181, 138);
+    width: 100%;
+}
+
+.team .team-header h2{
+    padding: 50px 0px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.team .team-content{
+    background-color: rgb(73, 124, 126);
+}
+
+.team .team-content .continer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+.team .team-content h3{
+    width: 100%;
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgb(226, 225, 225);;
+}
+
+.team .team-content .card{
+    border: 2px solid rgb(198, 195, 195);
+    border-radius: 10px;
+    background-color: gainsboro;
+    text-align: left;
+    width: 46%;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    margin: 4% 2% ;
+}
+
+.team .team-content .card:hover{
+    transform: scale(1.1);
+}
+
+.team .team-content .card img{
+    width: 100%;
+}
+
+.team .team-content .card p{
+    margin: 20px 0px 20px 20px;
+    font-size: 18px;
+}
+
+.team .team-content .card a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+}
+
+.team .team-content .card #link1{
+    left: 10px;
+}
+
+.team .team-content .card #link2{
+    left: 175px;
+}
+                        /* contact style */
+.contact{
+    background-color: white;
+}
+
+.contact h2{
+    padding: 90px 0px 30px;
+    font-weight: 800;
+}
+
+.contact form input ,textarea{
+    outline: none;
+    width: 100%;
+    border: 2px solid rgb(172, 24, 130);
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+}
+
+.contact form #btn{
+    background-color: rgb(113, 17, 193);
+    border: 2px solid black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contact form #btn:hover{
+    background-color: rgb(172, 24, 130);
+}
+
+                               /* Footer Style  */
+footer{
+    padding: 50px 0px;
+    background-color: rgb(208, 204, 204);
+    display: grid;
+    grid-template-columns: 1fr 26% 5% 12% 17% 1fr;
+    grid-template-areas: ". foot-logo . foot-links foot-sup-one foot-sup-two .";
+}
+
+footer .foot-logo{
+    grid-area: foot-logo;
+}
+
+footer .foot-logo img{
+    width: 40%;
+}
+
+footer .foot-links{
+    grid-area: foot-links;
+}
+
+footer .foot-support-one{
+    grid-area: foot-sup-one;
+    display: flex;
+}
+
+footer .foot-support-two{
+    grid-area: foot-sup-two;
+    margin-left: 30px;
+}
+
+footer .foot-support-two input{
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+footer .foot-support-two button{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: rgb(113, 17, 193);
+    color: white;
+    border: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer a{
+    text-decoration: none;
+    color: blueviolet;
+    display: inline-block;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover{
+    padding-left: 40px;
+    color: blue;
+}
